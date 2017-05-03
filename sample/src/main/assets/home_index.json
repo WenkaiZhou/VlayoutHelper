@@ -1,0 +1,90 @@
+{
+  "loopData": {
+    "items": [
+      {
+        "id": "0",
+        "descText": "The first picture",
+        "imgUrl": "http://img.alicdn.com/tps/i3/TB1urIUJXXXXXa8XpXXgoUDMFXX-1680-400.jpg",
+        "link": "https://github.com/xuehuayous/WrapRecyclerView"
+      },
+      {
+        "id": "1",
+        "descText": "The second picture",
+        "imgUrl": "http://i.mmcdn.cn/simba/img/TB1FyZYIVXXXXaRXVXXSutbFXXX.jpg",
+        "link": "https://github.com/xuehuayous/WrapRecyclerView"
+      },
+      {
+        "id": "2",
+        "descText": "The third picture",
+        "imgUrl": "http://img.alicdn.com/tps/i1/TB1PRgKJXXXXXcSXFXXgoUDMFXX-1680-400.jpg",
+        "link": "https://github.com/xuehuayous/WrapRecyclerView"
+      },
+      {
+        "id": "3",
+        "descText": "The fourth picture",
+        "imgUrl": "http://img.alicdn.com/tps/i2/TB1CeQRJXXXXXcbXpXXgoUDMFXX-1680-400.jpg",
+        "link": "https://github.com/xuehuayous/WrapRecyclerView"
+      },
+      {
+        "id": "4",
+        "descText": "The fourth picture",
+        "imgUrl": "http://img.alicdn.com/tps/i3/TB1ws32JXXXXXXgXXXXgoUDMFXX-1680-400.jpg",
+        "link": "https://github.com/xuehuayous/WrapRecyclerView"
+      },
+      {
+        "id": "5",
+        "descText": "The fourth picture",
+        "imgUrl": "http://img.alicdn.com/tps/i2/TB1SNQFJXXXXXbjXpXXl_Xx2XXX-1680-400.jpeg",
+        "link": "https://github.com/xuehuayous/WrapRecyclerView"
+      },
+      {
+        "id": "6",
+        "descText": "The fourth picture",
+        "imgUrl": "http://img.alicdn.com/tps/i3/TB1IAsHJXXXXXaqXVXXgoUDMFXX-1680-400.jpg",
+        "link": "https://github.com/xuehuayous/WrapRecyclerView"
+      }
+    ]
+  },
+  "hotPoint": [
+    {
+      "imgUrl": "https://img.alicdn.com/tps/i3/TB1DGkJJFXXXXaZXFXX07tlTXXX-200-200.png_88x88xz.jpg",
+      "name": "天猫"
+    },
+    {
+      "imgUrl": "https://img.alicdn.com/tps/i4/TB1CKSgIpXXXXccXXXX07tlTXXX-200-200.png_88x88xz.jpg",
+      "name": "聚划算"
+    },
+    {
+      "imgUrl": "https://img.alicdn.com/tps/TB17c96OXXXXXaUXFXXXXXXXXXX-200-200.png_88x88xz.jpg",
+      "name": "淘票票"
+    },
+    {
+      "imgUrl": "https://img.alicdn.com/tps/i3/TB15GYBKXXXXXXcXpXX07tlTXXX-200-200.png_88x88xz.jpg",
+      "name": "爱逛街"
+    },
+    {
+      "imgUrl": "https://img.alicdn.com/tps/TB1gwh3KFXXXXXkaXXXXXXXXXXX-200-200.png_88x88xz.jpg",
+      "name": "蚂蚁聚宝"
+    },
+    {
+      "imgUrl": "https://img.alicdn.com/tps/TB1zEtNPVXXXXbAXFXXXXXXXXXX-200-200.png_88x88xz.jpg",
+      "name": "飞猪"
+    },
+    {
+      "imgUrl": "https://img.alicdn.com/tps/i2/TB1p6kgIXXXXXXTXXXXezUPJpXX-87-87.jpg_88x88xz.jpg",
+      "name": "闲鱼"
+    },
+    {
+      "imgUrl": "https://img.alicdn.com/tfs/TB1lXzzKpXXXXXnXVXXXXXXXXXX-200-200.png_88x88xz.jpg",
+      "name": "淘宝全球"
+    },
+    {
+      "imgUrl": "https://img.alicdn.com/tps/TB1efJ4LXXXXXXmXVXXXXXXXXXX-200-200.png_88x88xz.jpg",
+      "name": "淘宝头条"
+    },
+    {
+      "imgUrl": "https://img.alicdn.com/tps/TB10X1LKVXXXXbSXFXXXXXXXXXX-200-200.png_88x88xz.jpg",
+      "name": "一淘"
+    }
+  ]
+}
