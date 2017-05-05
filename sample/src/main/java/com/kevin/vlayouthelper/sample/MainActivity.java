@@ -39,8 +39,8 @@ public class MainActivity extends Activity {
         HomeIndex homeIndex = new Gson().fromJson(homeIndexStr, HomeIndex.class);
 
         List<DelegateAdapter.Adapter> mAdapters = new AdapterBuild()
-                .registerAdapter(new BannerAdapter(homeIndex.loopData))
-                .registerAdapter(new HotPointAdapter(homeIndex.hotPoint, 5))
+                .addAdapter(new BannerAdapter(homeIndex.loopData))
+                .addAdapter(new HotPointAdapter(homeIndex.hotPoint, 5))
                 .build();
         mDelegateAdapter.setAdapters(mAdapters);
     }

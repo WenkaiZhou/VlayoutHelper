@@ -45,7 +45,7 @@ public class AdapterBuild {
     
     List<DelegateAdapter.Adapter> adapters = new ArrayList<>();
 
-    public AdapterBuild registerAdapter(BaseAdapter adapter) {
+    public AdapterBuild addAdapter(BaseAdapter adapter) {
         if (adapter == null) {
             throw new IllegalArgumentException("Argument cannot be null");
         }
