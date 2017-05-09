@@ -7,7 +7,7 @@
 
         <variable
             name="model"
-            type="com.kevin.vlayouthelper.sample.HomeIndex.Recommend" />
+            type="com.kevin.vlayouthelper.sample.home.HomeIndex.Recommend" />
     </data>
 
 
@@ -15,11 +15,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-
         <android.support.constraint.ConstraintLayout
             android:id="@+id/main"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="@{model.height, default=wrap_content}">
 
             <ImageView
                 android:id="@+id/iv_img"

@@ -7,7 +7,7 @@
 
         <variable
             name="model"
-            type="com.kevin.vlayouthelper.sample.HomeIndex.HotPoint" />
+            type="com.kevin.vlayouthelper.sample.home.HomeIndex.HotPoint" />
     </data>
 
     <android.support.constraint.ConstraintLayout

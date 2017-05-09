@@ -1,18 +1,12 @@
-package com.kevin.vlayouthelper.sample.adapter;
+package com.kevin.vlayouthelper.sample.home.adapter;
 
 import android.databinding.ViewDataBinding;
-import android.graphics.Color;
 import android.view.View;
-import android.widget.Toast;
 
-import com.alibaba.android.vlayout.layout.GridLayoutHelper;
-import com.kevin.vlayouthelper.adapter.GridAdapter;
 import com.kevin.vlayouthelper.adapter.StaggeredGridAdapter;
 import com.kevin.vlayouthelper.sample.BR;
-import com.kevin.vlayouthelper.sample.HomeIndex;
 import com.kevin.vlayouthelper.sample.R;
-import com.kevin.vlayouthelper.sample.databinding.LayoutBannerAdapterBinding;
-import com.kevin.vlayouthelper.sample.databinding.LayoutRecommendAdapterBinding;
+import com.kevin.vlayouthelper.sample.home.HomeIndex;
 
 import java.util.List;
 
@@ -39,7 +33,6 @@ public class RecommendAdapter extends StaggeredGridAdapter<HomeIndex.Recommend> 
     @Override
     public void setVariable(ViewDataBinding binding, int position) {
         binding.setVariable(BR.model, mItems.get(position));
-        ((LayoutRecommendAdapterBinding) binding).main.getLayoutParams().height = mItems.get(position).height * 5;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.kevin.vlayouthelper.sample.adapter;
+package com.kevin.vlayouthelper.sample.home.adapter;
 
 /**
  * Created by zhouwenkai on 2017/5/1.

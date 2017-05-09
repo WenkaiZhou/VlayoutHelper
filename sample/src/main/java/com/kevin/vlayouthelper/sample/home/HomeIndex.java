@@ -1,4 +1,4 @@
-package com.kevin.vlayouthelper.sample;
+package com.kevin.vlayouthelper.sample.home;
 
 import com.kevin.loopview.internal.LoopData;
 

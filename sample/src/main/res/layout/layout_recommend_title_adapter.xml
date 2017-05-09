@@ -7,7 +7,7 @@
 
         <variable
             name="model"
-            type="com.kevin.vlayouthelper.sample.HomeIndex.RecommendTitle" />
+            type="com.kevin.vlayouthelper.sample.home.HomeIndex.RecommendTitle" />
     </data>
 
 
