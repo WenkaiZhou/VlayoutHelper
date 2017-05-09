@@ -44,7 +44,6 @@ import java.util.List;
  *             |           |
  *             |-----------|
  *
- *         <p/>
  *         note:If you modify this class please fill in the following content as a record.
  * @author mender，Modified Date Modify Content:
  */

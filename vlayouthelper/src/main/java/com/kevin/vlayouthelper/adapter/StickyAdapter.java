@@ -32,7 +32,6 @@ import com.alibaba.android.vlayout.layout.StickyLayoutHelper;
  * @author zhouwenkai@baidu.com ,Created on 2017-05-01 14:08:04
  *         Major Function：<b>LayoutHelper which allow item sticky to start/end, used for StickyLayoutHelper</b>
  *
- *         <p/>
  *         note:If you modify this class please fill in the following content as a record.
  * @author mender，Modified Date Modify Content:
  */

@@ -31,7 +31,7 @@ import com.alibaba.android.vlayout.layout.FixAreaLayoutHelper;
  *
  * @author zhouwenkai@baidu.com ,Created on 2017-05-01 13:46:06
  *         Major Function：<b>LayoutHelper that will be located as fix position</b>
- *         <p>
+ *
  *         note:If you modify this class please fill in the following content as a record.
  * @author mender，Modified Date Modify Content:
  */

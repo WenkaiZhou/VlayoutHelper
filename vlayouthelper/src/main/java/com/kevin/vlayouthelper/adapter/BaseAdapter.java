@@ -39,7 +39,7 @@ import com.alibaba.android.vlayout.LayoutHelper;
  *
  * @author zhouwenkai@baidu.com ,Created on 2017-04-09 18:47:22
  *         Major Function：<b>base Adapter for vlayout</b>
- *         <p/>
+ *
  *         note:If you modify this class please fill in the following content as a record.
  * @author mender，Modified Date Modify Content:
  */

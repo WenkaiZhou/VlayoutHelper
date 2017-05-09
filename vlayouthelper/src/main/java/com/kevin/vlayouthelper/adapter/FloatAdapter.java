@@ -33,7 +33,6 @@ import com.alibaba.android.vlayout.layout.FloatLayoutHelper;
  * @author zhouwenkai@baidu.com ,Created on 2017-05-01 13:57:40
  *         Major Function：<b>LayoutHelper that will be located as fix position at first layout, but its position could be changed by dragingg and dropping,used fot FloatLayoutHelper</b>
  *
- *         <p/>
  *         note:If you modify this class please fill in the following content as a record.
  * @author mender，Modified Date Modify Content:
  */

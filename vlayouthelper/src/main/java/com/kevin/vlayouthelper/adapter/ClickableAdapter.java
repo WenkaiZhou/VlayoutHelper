@@ -33,7 +33,7 @@ import com.alibaba.android.vlayout.LayoutHelper;
  *
  * @author zhouwenkai@baidu.com ,Created on 2017-04-10 00:14:50
  *         Major Function：<b>Add click listener to Base Adapter</b>
- *         <p/>
+ *
  *         note:If you modify this class please fill in the following content as a record.
  * @author mender，Modified Date Modify Content:
  */
