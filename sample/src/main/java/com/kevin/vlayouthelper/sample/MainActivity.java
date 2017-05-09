@@ -8,7 +8,9 @@ import com.alibaba.android.vlayout.VirtualLayoutManager;
 import com.google.gson.Gson;
 import com.kevin.vlayouthelper.AdapterBuild;
 import com.kevin.vlayouthelper.sample.adapter.BannerAdapter;
+import com.kevin.vlayouthelper.sample.adapter.RecommendAdapter;
 import com.kevin.vlayouthelper.sample.adapter.HotPointAdapter;
+import com.kevin.vlayouthelper.sample.adapter.RecommendTitleAdapter;
 import com.kevin.vlayouthelper.sample.utils.LocalFileUtils;
 
 import java.util.List;
@@ -41,6 +43,8 @@ public class MainActivity extends Activity {
         List<DelegateAdapter.Adapter> mAdapters = new AdapterBuild()
                 .addAdapter(new BannerAdapter(homeIndex.loopData))
                 .addAdapter(new HotPointAdapter(homeIndex.hotPoint, 5))
+                .addAdapter(new RecommendTitleAdapter(homeIndex.recommendTitle))
+                .addAdapter(new RecommendAdapter(homeIndex.recommend, 2))
                 .build();
         mDelegateAdapter.setAdapters(mAdapters);
     }
