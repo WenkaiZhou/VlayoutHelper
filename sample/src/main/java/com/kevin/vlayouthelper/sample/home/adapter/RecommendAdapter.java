@@ -17,7 +17,7 @@ import java.util.List;
 public class RecommendAdapter extends StaggeredGridAdapter<HomeIndex.Recommend> {
 
     public RecommendAdapter(List<HomeIndex.Recommend> items, int lanes) {
-        super(lanes, 0);
+        super(lanes);
         this.mItems = items;
     }
 

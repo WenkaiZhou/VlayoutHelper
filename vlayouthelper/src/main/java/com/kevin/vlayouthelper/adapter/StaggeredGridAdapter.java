@@ -52,6 +52,10 @@ public abstract class StaggeredGridAdapter<T> extends ClickableAdapter<Staggered
 
     protected List<T> mItems;
 
+    public StaggeredGridAdapter(int lanes) {
+        this.mNumLanes = lanes;
+    }
+
     public StaggeredGridAdapter(int lanes, int gap) {
         this.mNumLanes = lanes;
         this.mGap = gap;
