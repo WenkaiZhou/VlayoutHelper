@@ -35,13 +35,10 @@ import com.alibaba.android.vlayout.DelegateAdapter;
 import com.alibaba.android.vlayout.LayoutHelper;
 
 /**
- * BaseAdapter
+ * base Adapter for vlayout
  *
- * @author zhouwenkai@baidu.com ,Created on 2017-04-09 18:47:22
- *         Major Function：<b>base Adapter for vlayout</b>
- *
- *         note:If you modify this class please fill in the following content as a record.
- * @author mender，Modified Date Modify Content:
+ * @author zwenkai@foxmail.com
+ * @date 2017-04-09 18:47:22
  */
 
 public abstract class BaseAdapter<LH extends LayoutHelper> extends DelegateAdapter.Adapter<BaseAdapter.BindingHolder> {

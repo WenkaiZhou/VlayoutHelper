@@ -29,17 +29,14 @@ import com.alibaba.android.vlayout.layout.SingleLayoutHelper;
 /**
  * SingleAdapter
  *
- * @author zhouwenkai@baidu.com ,Created on 2017-04-10 00:28:47
- *         Major Function：<b>LayoutHelper contains only one view, used for SingleLayoutHelper</b>
- *
  * -------------------------
  * |                       |
  * |                       |
  * |                       |
  * -------------------------
  *
- *         note:If you modify this class please fill in the following content as a record.
- * @author mender，Modified Date Modify Content:
+ * @author zwenkai@foxmail.com
+ * @date 2017-04-10 00:28:47
  */
 
 public abstract class SingleAdapter<T> extends ClickableAdapter<SingleLayoutHelper> {

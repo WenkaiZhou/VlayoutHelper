@@ -27,13 +27,10 @@ package com.kevin.vlayouthelper.adapter;
 import com.alibaba.android.vlayout.layout.FixAreaLayoutHelper;
 
 /**
- * FixAreaAdapter
+ * LayoutHelper that will be located as fix position
  *
- * @author zhouwenkai@baidu.com ,Created on 2017-05-01 13:46:06
- *         Major Function：<b>LayoutHelper that will be located as fix position</b>
- *
- *         note:If you modify this class please fill in the following content as a record.
- * @author mender，Modified Date Modify Content:
+ * @author zwenkai@foxmail.com
+ * @date 2017-05-01 13:46:06
  */
 
 public abstract class FixAreaAdapter<LH extends FixAreaLayoutHelper> extends ClickableAdapter<LH> {

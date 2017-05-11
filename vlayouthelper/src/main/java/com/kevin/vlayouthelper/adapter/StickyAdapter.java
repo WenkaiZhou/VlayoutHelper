@@ -27,13 +27,10 @@ package com.kevin.vlayouthelper.adapter;
 import com.alibaba.android.vlayout.layout.StickyLayoutHelper;
 
 /**
- * StickyAdapter
+ * LayoutHelper which allow item sticky to start/end, used for StickyLayoutHelper
  *
- * @author zhouwenkai@baidu.com ,Created on 2017-05-01 14:08:04
- *         Major Function：<b>LayoutHelper which allow item sticky to start/end, used for StickyLayoutHelper</b>
- *
- *         note:If you modify this class please fill in the following content as a record.
- * @author mender，Modified Date Modify Content:
+ * @author zwenkai@foxmail.com
+ * @date 2017-05-01 14:08:04
  */
 
 public abstract class StickyAdapter<T> extends FixAreaAdapter<StickyLayoutHelper> {

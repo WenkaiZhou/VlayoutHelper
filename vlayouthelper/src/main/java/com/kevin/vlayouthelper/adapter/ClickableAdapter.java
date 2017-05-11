@@ -29,13 +29,10 @@ import android.view.View;
 import com.alibaba.android.vlayout.LayoutHelper;
 
 /**
- * ClickableAdapter
+ * Add click listener to Base Adapter
  *
- * @author zhouwenkai@baidu.com ,Created on 2017-04-10 00:14:50
- *         Major Function：<b>Add click listener to Base Adapter</b>
- *
- *         note:If you modify this class please fill in the following content as a record.
- * @author mender，Modified Date Modify Content:
+ * @author zwenkai@foxmail.com
+ * @date 2017-04-10 00:14:50
  */
 
 public abstract class ClickableAdapter<LH extends LayoutHelper> extends BaseAdapter<LH> {

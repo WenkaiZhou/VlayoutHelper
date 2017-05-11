@@ -30,10 +30,7 @@ import com.kevin.vlayouthelper.adapter.ClickableAdapter;
 import java.util.List;
 
 /**
- * GridAdapter
- *
- * @author zhouwenkai@baidu.com ,Created on 2017-05-01 00:58:51
- *         Major Function：<b>LayoutHelper provides GridLayout,used for GridLayoutHelper</b>
+ * LayoutHelper provides GridLayout,used for GridLayoutHelper
  *
  * -------------------------
  * |     |     |     |     |
@@ -43,8 +40,8 @@ import java.util.List;
  * |     |     |     |     |
  * -------------------------
  *
- *         note:If you modify this class please fill in the following content as a record.
- * @author mender，Modified Date Modify Content:
+ * @author zwenkai@foxmail.com
+ * @date 2017-05-01 00:58:51
  */
 
 public abstract class GridAdapter<T> extends ClickableAdapter<GridLayoutHelper> {

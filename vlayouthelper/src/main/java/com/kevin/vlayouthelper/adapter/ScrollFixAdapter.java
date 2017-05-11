@@ -28,13 +28,10 @@ import com.alibaba.android.vlayout.layout.FixLayoutHelper;
 import com.alibaba.android.vlayout.layout.ScrollFixLayoutHelper;
 
 /**
- * ScrollFixAdapter
+ * Absolute layout which only shows after scrolling to its' position,used for FloatLayoutHelper
  *
- * @author zhouwenkai@baidu.com ,Created on 2017-05-01 14:15:33
- *         Major Function：<b>Absolute layout which only shows after scrolling to its' position,used for FloatLayoutHelper</b>
- *
- *         note:If you modify this class please fill in the following content as a record.
- * @author mender，Modified Date Modify Content:
+ * @author zwenkai@foxmail.com
+ * @date 2017-05-01 14:15:33
  */
 
 public abstract class ScrollFixAdapter<T> extends FixAreaAdapter<ScrollFixLayoutHelper> {

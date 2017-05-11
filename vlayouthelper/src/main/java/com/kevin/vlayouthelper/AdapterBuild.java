@@ -33,11 +33,8 @@ import java.util.List;
 /**
  * AdapterBuild
  *
- * @author zhouwenkai@baidu.com ,Created on 2017-05-01 11:32:51
- *         Major Function：<b>AdapterBuild</b>
- *
- *         note:If you modify this class please fill in the following content as a record.
- * @author mender，Modified Date Modify Content:
+ * @author zwenkai@foxmail.com
+ * @date 2017-05-01 11:32:51
  */
 
 public class AdapterBuild {
