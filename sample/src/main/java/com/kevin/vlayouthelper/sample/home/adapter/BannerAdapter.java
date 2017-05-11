@@ -2,6 +2,7 @@ package com.kevin.vlayouthelper.sample.home.adapter;
 
 import android.databinding.ViewDataBinding;
 
+import com.alibaba.android.vlayout.layout.SingleLayoutHelper;
 import com.kevin.loopview.internal.LoopData;
 import com.kevin.vlayouthelper.adapter.SingleAdapter;
 import com.kevin.vlayouthelper.sample.BR;
@@ -36,4 +37,10 @@ public class BannerAdapter extends SingleAdapter<LoopData> {
         binding.setVariable(BR.viewmodel, mViewModel);
         binding.setVariable(BR.model, mData);
     }
+
+    @Override
+    public void configLayoutHelper(SingleLayoutHelper layoutHelper) {
+        layoutHelper.setAspectRatio(2.04933586f);
+    }
+
 }

@@ -16,7 +16,7 @@
     <com.kevin.loopview.AdLoopView
         android:id="@+id/loop_view"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="match_parent"
         app:onClickListener="@{viewmodel.onBannerItemClick}"
         app:loopViewPager="@{model}"
         app:loop_autoLoop="true"
