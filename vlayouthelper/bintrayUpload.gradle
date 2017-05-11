@@ -25,6 +25,9 @@ def developerId = properties.getProperty("developer.id")
 def developerName = properties.getProperty("developer.name")
 def developerEmail = properties.getProperty("developer.email")
 
+def licenseName = properties.getProperty("license.name")
+def licenseUrl = properties.getProperty("license.url")
+
 def bintrayUser = properties.getProperty("bintray.user")
 def bintrayApikey = properties.getProperty("bintray.apikey")
 
@@ -45,8 +48,8 @@ install {
                 url projectSiteUrl
                 licenses {
                     license {
-                        name 'The Apache Software License, Version 2.0'
-                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        name licenseName
+                        url licenseUrl
                     }
                 }
                 developers {
@@ -111,7 +114,7 @@ bintray {
         name = projectName
         websiteUrl = projectSiteUrl
         vcsUrl = projectGitUrl
-        licenses = ["Apache-2.0"]
+        licenses = [licenseName]
         publish = true
     }
 }
