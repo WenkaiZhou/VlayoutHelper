@@ -23,9 +23,8 @@ public class HotPointAdapter extends GridAdapter<HomeIndex.HotPoint> {
     private HomeViewModel mViewModel;
 
     public HotPointAdapter(HomeViewModel viewModel, List<HomeIndex.HotPoint> items, int spanCount) {
-        super(spanCount);
+        super(items, spanCount);
         this.mViewModel = viewModel;
-        this.mItems = items;
     }
 
     @Override

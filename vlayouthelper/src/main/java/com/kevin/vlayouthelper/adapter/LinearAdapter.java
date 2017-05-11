@@ -25,7 +25,6 @@
 package com.kevin.vlayouthelper.adapter;
 
 import com.alibaba.android.vlayout.layout.LinearLayoutHelper;
-import com.kevin.vlayouthelper.adapter.ClickableAdapter;
 
 import java.util.List;
 
@@ -42,6 +41,7 @@ import java.util.List;
  *
  * @author zwenkai@foxmail.com
  * @date 2017-04-10 02:47:15
+ * @since 1.0.0
  */
 
 public abstract class LinearAdapter<T> extends ClickableAdapter<LinearLayoutHelper> {

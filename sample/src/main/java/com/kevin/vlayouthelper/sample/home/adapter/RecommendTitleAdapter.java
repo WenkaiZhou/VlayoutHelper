@@ -14,7 +14,7 @@ import com.kevin.vlayouthelper.sample.home.HomeIndex;
 public class RecommendTitleAdapter extends StickyAdapter<HomeIndex.RecommendTitle> {
 
     public RecommendTitleAdapter(HomeIndex.RecommendTitle data) {
-        this.mData = data;
+        super(data);
     }
 
     @Override

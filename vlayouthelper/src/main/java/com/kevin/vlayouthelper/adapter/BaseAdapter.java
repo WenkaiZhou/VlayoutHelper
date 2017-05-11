@@ -39,6 +39,7 @@ import com.alibaba.android.vlayout.LayoutHelper;
  *
  * @author zwenkai@foxmail.com
  * @date 2017-04-09 18:47:22
+ * @since 1.0.0
  */
 
 public abstract class BaseAdapter<LH extends LayoutHelper> extends DelegateAdapter.Adapter<BaseAdapter.BindingHolder> {

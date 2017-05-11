@@ -33,6 +33,7 @@ import com.alibaba.android.vlayout.LayoutHelper;
  *
  * @author zwenkai@foxmail.com
  * @date 2017-04-10 00:14:50
+ * @since 1.0.0
  */
 
 public abstract class ClickableAdapter<LH extends LayoutHelper> extends BaseAdapter<LH> {

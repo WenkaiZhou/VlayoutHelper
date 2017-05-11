@@ -37,11 +37,20 @@ import com.alibaba.android.vlayout.layout.SingleLayoutHelper;
  *
  * @author zwenkai@foxmail.com
  * @date 2017-04-10 00:28:47
+ * @since 1.0.0
  */
 
 public abstract class SingleAdapter<T> extends ClickableAdapter<SingleLayoutHelper> {
 
     protected T mData;
+
+    public SingleAdapter() {
+
+    }
+
+    public SingleAdapter(T data) {
+        this.mData = data;
+    }
 
     @Override
     public SingleLayoutHelper getLayoutHelper() {

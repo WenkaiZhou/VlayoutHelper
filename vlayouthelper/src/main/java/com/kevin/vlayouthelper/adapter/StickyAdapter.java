@@ -31,6 +31,7 @@ import com.alibaba.android.vlayout.layout.StickyLayoutHelper;
  *
  * @author zwenkai@foxmail.com
  * @date 2017-05-01 14:08:04
+ * @since 1.0.0
  */
 
 public abstract class StickyAdapter<T> extends FixAreaAdapter<StickyLayoutHelper> {
@@ -44,6 +45,15 @@ public abstract class StickyAdapter<T> extends FixAreaAdapter<StickyLayoutHelper
     }
 
     public StickyAdapter(boolean stickyStart) {
+        this(null, stickyStart);
+    }
+
+    public StickyAdapter(T data) {
+        this(data, true);
+    }
+
+    public StickyAdapter(T data, boolean stickyStart) {
+        this.mData = data;
         this.mStickyStart = stickyStart;
     }
 

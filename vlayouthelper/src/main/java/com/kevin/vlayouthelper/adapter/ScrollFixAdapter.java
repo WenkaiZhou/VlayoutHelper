@@ -32,6 +32,7 @@ import com.alibaba.android.vlayout.layout.ScrollFixLayoutHelper;
  *
  * @author zwenkai@foxmail.com
  * @date 2017-05-01 14:15:33
+ * @since 1.0.0
  */
 
 public abstract class ScrollFixAdapter<T> extends FixAreaAdapter<ScrollFixLayoutHelper> {
@@ -43,13 +44,22 @@ public abstract class ScrollFixAdapter<T> extends FixAreaAdapter<ScrollFixLayout
     protected T mData;
 
     public ScrollFixAdapter(int x, int y) {
-        this.mX = x;
-        this.mY = y;
+        this(FixLayoutHelper.TOP_LEFT, x, y);
     }
 
     public ScrollFixAdapter(int alignType, int x, int y) {
-        this(x, y);
+        this(null, alignType, x, y);
+    }
+
+    public ScrollFixAdapter(T data, int x, int y) {
+        this(data, FixLayoutHelper.TOP_LEFT, x, y);
+    }
+
+    public ScrollFixAdapter(T data, int alignType, int x, int y) {
+        this.mData = data;
         this.mAlignType = alignType;
+        this.mX = x;
+        this.mY = y;
     }
 
     @Override

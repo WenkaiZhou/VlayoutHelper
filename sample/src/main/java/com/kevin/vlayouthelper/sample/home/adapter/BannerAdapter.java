@@ -17,8 +17,8 @@ public class BannerAdapter extends SingleAdapter<LoopData> {
     private HomeViewModel mViewModel;
 
     public BannerAdapter(HomeViewModel viewModel, LoopData loopData) {
+        super(loopData);
         this.mViewModel = viewModel;
-        this.mData = loopData;
     }
 
     @Override

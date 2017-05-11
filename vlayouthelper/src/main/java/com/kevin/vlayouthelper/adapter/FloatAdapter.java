@@ -32,6 +32,7 @@ import com.alibaba.android.vlayout.layout.FloatLayoutHelper;
  *
  * @author zwenkai@foxmail.com
  * @date 2017-05-01 13:57:40
+ * @since 1.0.0
  */
 
 public abstract class FloatAdapter<T> extends FixAreaAdapter<FloatLayoutHelper> {

@@ -31,6 +31,7 @@ import com.alibaba.android.vlayout.layout.FixLayoutHelper;
  *
  * @author zwenkai@foxmail.com
  * @date 2017-05-01 13:57:40
+ * @since 1.0.0
  */
 
 public abstract class FixAdapter<T> extends FixAreaAdapter<FixLayoutHelper> {
@@ -42,13 +43,22 @@ public abstract class FixAdapter<T> extends FixAreaAdapter<FixLayoutHelper> {
     protected T mData;
 
     public FixAdapter(int x, int y) {
-        this.mX = x;
-        this.mY = y;
+        this(FixLayoutHelper.TOP_LEFT, x, y);
     }
 
     public FixAdapter(int alignType, int x, int y) {
-        this(x, y);
+        this(null, alignType, x, y);
+    }
+
+    public FixAdapter(T data, int x, int y) {
+        this(data, FixLayoutHelper.TOP_LEFT, x, y);
+    }
+
+    public FixAdapter(T data, int alignType, int x, int y) {
+        this.mData = data;
         this.mAlignType = alignType;
+        this.mX = x;
+        this.mY = y;
     }
 
     @Override

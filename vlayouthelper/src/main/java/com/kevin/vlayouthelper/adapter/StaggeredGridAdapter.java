@@ -43,6 +43,7 @@ import java.util.List;
  *
  * @author zwenkai@foxmail.com
  * @date Created on 2017-04-10 02:47:15
+ * @since 1.0.0
  */
 
 public abstract class StaggeredGridAdapter<T> extends ClickableAdapter<StaggeredGridLayoutHelper> {
@@ -53,10 +54,19 @@ public abstract class StaggeredGridAdapter<T> extends ClickableAdapter<Staggered
     protected List<T> mItems;
 
     public StaggeredGridAdapter(int lanes) {
-        this.mNumLanes = lanes;
+        this(lanes, 0);
     }
 
     public StaggeredGridAdapter(int lanes, int gap) {
+        this(null, lanes, gap);
+    }
+
+    public StaggeredGridAdapter(List<T> items, int lanes) {
+        this(items, lanes, 0);
+    }
+
+    public StaggeredGridAdapter(List<T> items, int lanes, int gap) {
+        this.mItems = items;
         this.mNumLanes = lanes;
         this.mGap = gap;
     }

@@ -25,7 +25,6 @@
 package com.kevin.vlayouthelper.adapter;
 
 import com.alibaba.android.vlayout.layout.GridLayoutHelper;
-import com.kevin.vlayouthelper.adapter.ClickableAdapter;
 
 import java.util.List;
 
@@ -42,6 +41,7 @@ import java.util.List;
  *
  * @author zwenkai@foxmail.com
  * @date 2017-05-01 00:58:51
+ * @since 1.0.0
  */
 
 public abstract class GridAdapter<T> extends ClickableAdapter<GridLayoutHelper> {
@@ -51,6 +51,11 @@ public abstract class GridAdapter<T> extends ClickableAdapter<GridLayoutHelper> 
 
     public GridAdapter(int spanCount) {
         this.mSpanCount = spanCount;
+    }
+
+    public GridAdapter(List<T> items, int spanCount) {
+        this(spanCount);
+        this.mItems = items;
     }
 
     @Override

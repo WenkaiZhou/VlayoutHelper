@@ -31,6 +31,7 @@ import com.alibaba.android.vlayout.layout.FixAreaLayoutHelper;
  *
  * @author zwenkai@foxmail.com
  * @date 2017-05-01 13:46:06
+ * @since 1.0.0
  */
 
 public abstract class FixAreaAdapter<LH extends FixAreaLayoutHelper> extends ClickableAdapter<LH> {
