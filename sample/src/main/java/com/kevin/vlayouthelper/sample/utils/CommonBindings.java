@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
-public class BindingUtils {
+public class CommonBindings {
 
     @BindingAdapter("imageUrl")
     public static void loadImage(ImageView view, String url) {
@@ -20,6 +20,15 @@ public class BindingUtils {
     public static void loadImage(ImageView view, String url, Drawable error) {
         Glide.with(view.getContext()).load(url).error(error)
                 .diskCacheStrategy(DiskCacheStrategy.ALL).into(view);
+    }
+
+    @BindingAdapter("android:layout_width")
+    public static void setLayoutWidth(View view, float dipValue) {
+        ViewGroup.LayoutParams lp = view.getLayoutParams();
+        if (lp != null) {
+            lp.width = DisplayUtils.dip2px(view.getContext(), dipValue);
+            view.setLayoutParams(lp);
+        }
     }
 
     @BindingAdapter("android:layout_height")

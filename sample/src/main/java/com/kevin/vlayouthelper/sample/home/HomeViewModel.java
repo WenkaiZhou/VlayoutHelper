@@ -10,7 +10,6 @@ import android.widget.Toast;
 
 import com.alibaba.android.vlayout.DelegateAdapter;
 import com.google.gson.Gson;
-import com.kevin.loopview.internal.BaseLoopAdapter;
 import com.kevin.vlayouthelper.AdapterBuild;
 import com.kevin.vlayouthelper.sample.home.adapter.BannerAdapter;
 import com.kevin.vlayouthelper.sample.home.adapter.HotPointAdapter;
@@ -30,6 +29,7 @@ public class HomeViewModel extends BaseObservable {
     public final ObservableList<DelegateAdapter.Adapter> adapters = new ObservableArrayList<>();
 
     private Context mContext;
+    private HomeIndex mHomeIndex;
 
     public HomeViewModel(Context context) {
         mContext = context.getApplicationContext();
@@ -41,13 +41,13 @@ public class HomeViewModel extends BaseObservable {
 
     private void loadData() {
         String homeIndexStr = LocalFileUtils.getStringFormAsset(mContext, "home_index.json");
-        HomeIndex homeIndex = new Gson().fromJson(homeIndexStr, HomeIndex.class);
+        mHomeIndex = new Gson().fromJson(homeIndexStr, HomeIndex.class);
 
         List<DelegateAdapter.Adapter> mAdapters = new AdapterBuild()
-                .addAdapter(new BannerAdapter(this, homeIndex.loopData))
-                .addAdapter(new HotPointAdapter(homeIndex.hotPoint, 5))
-                .addAdapter(new RecommendTitleAdapter(homeIndex.recommendTitle))
-                .addAdapter(new RecommendAdapter(homeIndex.recommend, 2))
+                .addAdapter(new BannerAdapter(this, mHomeIndex.loopData))
+                .addAdapter(new HotPointAdapter(this, mHomeIndex.hotPoint, 5))
+                .addAdapter(new RecommendTitleAdapter(mHomeIndex.recommendTitle))
+                .addAdapter(new RecommendAdapter(mHomeIndex.recommend, 2))
                 .build();
         adapters.clear();
         adapters.addAll(mAdapters);
@@ -63,6 +63,16 @@ public class HomeViewModel extends BaseObservable {
      */
     public void onBannerItemClick(PagerAdapter parent, View view, int position, int realPosition) {
         Toast.makeText(mContext, "Clicked position " + position, Toast.LENGTH_SHORT).show();
+    }
+
+    /**
+     * HotPoint点击监听的方法
+     *
+     * @param view
+     * @param position
+     */
+    public void onHotPointItemClick(View view, int position) {
+        Toast.makeText(view.getContext(), "go to " + mHomeIndex.hotPoint.get(position).name , Toast.LENGTH_SHORT).show();
     }
 
     public void onActivityDestroyed() {

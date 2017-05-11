@@ -10,6 +10,7 @@ import com.kevin.vlayouthelper.adapter.GridAdapter;
 import com.kevin.vlayouthelper.sample.BR;
 import com.kevin.vlayouthelper.sample.R;
 import com.kevin.vlayouthelper.sample.home.HomeIndex;
+import com.kevin.vlayouthelper.sample.home.HomeViewModel;
 
 import java.util.List;
 
@@ -19,14 +20,17 @@ import java.util.List;
 
 public class HotPointAdapter extends GridAdapter<HomeIndex.HotPoint> {
 
-    public HotPointAdapter(List<HomeIndex.HotPoint> items, int spanCount) {
+    private HomeViewModel mViewModel;
+
+    public HotPointAdapter(HomeViewModel viewModel, List<HomeIndex.HotPoint> items, int spanCount) {
         super(spanCount);
+        this.mViewModel = viewModel;
         this.mItems = items;
     }
 
     @Override
     public void onChildClick(View view, int position) {
-        Toast.makeText(view.getContext(), "go to " + mItems.get(position).name , Toast.LENGTH_SHORT).show();
+        mViewModel.onHotPointItemClick(view, position);
     }
 
     @Override

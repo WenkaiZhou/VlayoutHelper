@@ -108,7 +108,7 @@
       "action": "http://3c.m.tmall.com/?abbucket=&acm=201507301048.1003.1.388674&aldid=aqXKNGQS&abtest=&scm=1003.1.201507301048.OTHER_1_388674&pos=1",
       "industryId": "4",
       "bizId": "DQC",
-      "height": 125
+      "height": 225
     },
     {
       "type": "25",
@@ -123,7 +123,7 @@
       "action": "http://www.tmall.com/wh/tmall/fushi/act/nvzhuang?abbucket=&acm=201507301048.1003.1.388674&aldid=aqXKNGQS&spm=0.0.0.0.es6hPq&abtest=&scm=1003.1.201507301048.OTHER_2_388674&pos=2",
       "industryId": "5",
       "bizId": "NVZ",
-      "height": 150
+      "height": 250
     },
     {
       "type": "25",
@@ -153,7 +153,7 @@
       "action": "http://www.tmall.com/wh/tmall/baihuo/act/meizhuang?abbucket=&acm=201507301048.1003.1.388674&aldid=aqXKNGQS&abtest=&scm=1003.1.201507301048.OTHER_4_388674&pos=4",
       "industryId": "7",
       "bizId": "MZ",
-      "height": 65
+      "height": 165
     },
     {
       "type": "25",
