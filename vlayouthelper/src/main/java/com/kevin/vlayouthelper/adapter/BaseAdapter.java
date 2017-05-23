@@ -70,21 +70,21 @@ public abstract class BaseAdapter<LH extends LayoutHelper> extends DelegateAdapt
     }
 
     /**
-     * 获取布局文件
+     * get layout resource
      *
      * @return
      */
     public abstract int getLayoutRes();
 
     /**
-     * 获取LayoutHelper
+     * get LayoutHelper
      *
      * @return
      */
     public abstract LH getLayoutHelper();
 
     /**
-     * 配置LayoutHelper
+     * :config LayoutHelper
      *
      * @param layoutHelper
      */
@@ -93,8 +93,9 @@ public abstract class BaseAdapter<LH extends LayoutHelper> extends DelegateAdapt
     }
 
     /**
-     * 设置变量数据
-     * 比如：
+     * Set variable data
+     *
+     * example：
      * binding.setVariable(BR.model, mAdvertise);
      * binding.setVariable(BR.handler, mHandler);
      *

@@ -24,6 +24,8 @@
 
 package com.kevin.vlayouthelper.adapter;
 
+import android.databinding.ViewDataBinding;
+
 import com.alibaba.android.vlayout.layout.FixLayoutHelper;
 import com.alibaba.android.vlayout.layout.ScrollFixLayoutHelper;
 
@@ -66,5 +68,32 @@ public abstract class ScrollFixAdapter<T> extends FixAreaAdapter<ScrollFixLayout
     public ScrollFixLayoutHelper getLayoutHelper() {
         return new ScrollFixLayoutHelper(mAlignType, mX, mY);
     }
+
+    @Override
+    public int getItemViewType(int position) {
+        return getViewType();
+    }
+
+    @Override
+    public void setVariable(ViewDataBinding binding, int position) {
+        setVariable(binding);
+    }
+
+    /**
+     * get ViewType
+     *
+     * @return
+     */
+    public abstract int getViewType();
+
+    /**
+     * Set variable data
+     *
+     * example：
+     * binding.setVariable(BR.model, mAdvertise);
+     *
+     * @param binding
+     */
+    public abstract void setVariable(ViewDataBinding binding);
 
 }

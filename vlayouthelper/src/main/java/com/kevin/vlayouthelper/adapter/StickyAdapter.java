@@ -24,6 +24,8 @@
 
 package com.kevin.vlayouthelper.adapter;
 
+import android.databinding.ViewDataBinding;
+
 import com.alibaba.android.vlayout.layout.StickyLayoutHelper;
 
 /**
@@ -61,5 +63,20 @@ public abstract class StickyAdapter<T> extends FixAreaAdapter<StickyLayoutHelper
     public StickyLayoutHelper getLayoutHelper() {
         return new StickyLayoutHelper(mStickyStart);
     }
+
+    @Override
+    public void setVariable(ViewDataBinding binding, int position) {
+        setVariable(binding);
+    }
+
+    /**
+     * Set variable data
+     *
+     * example：
+     * binding.setVariable(BR.model, mAdvertise);
+     *
+     * @param binding
+     */
+    public abstract void setVariable(ViewDataBinding binding);
 
 }

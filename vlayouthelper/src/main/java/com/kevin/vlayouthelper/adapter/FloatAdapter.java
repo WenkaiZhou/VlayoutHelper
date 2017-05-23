@@ -24,6 +24,8 @@
 
 package com.kevin.vlayouthelper.adapter;
 
+import android.databinding.ViewDataBinding;
+
 import com.alibaba.android.vlayout.layout.FixLayoutHelper;
 import com.alibaba.android.vlayout.layout.FloatLayoutHelper;
 
@@ -63,4 +65,31 @@ public abstract class FloatAdapter<T> extends FixAreaAdapter<FloatLayoutHelper> 
         layoutHelper.setAlignType(mAlignType);
         layoutHelper.setDefaultLocation(mX, mY);
     }
+
+    @Override
+    public int getItemViewType(int position) {
+        return getViewType();
+    }
+
+    @Override
+    public void setVariable(ViewDataBinding binding, int position) {
+        setVariable(binding);
+    }
+
+    /**
+     * get ViewType
+     *
+     * @return
+     */
+    public abstract int getViewType();
+
+    /**
+     * Set variable data
+     *
+     * example：
+     * binding.setVariable(BR.model, mAdvertise);
+     *
+     * @param binding
+     */
+    public abstract void setVariable(ViewDataBinding binding);
 }

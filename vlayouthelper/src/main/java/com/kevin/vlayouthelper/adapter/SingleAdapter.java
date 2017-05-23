@@ -24,6 +24,8 @@
 
 package com.kevin.vlayouthelper.adapter;
 
+import android.databinding.ViewDataBinding;
+
 import com.alibaba.android.vlayout.layout.SingleLayoutHelper;
 
 /**
@@ -67,10 +69,26 @@ public abstract class SingleAdapter<T> extends ClickableAdapter<SingleLayoutHelp
         return getViewType();
     }
 
+    @Override
+    public void setVariable(ViewDataBinding binding, int position) {
+        setVariable(binding);
+    }
+
     /**
-     * 获取ViewType
+     * get ViewType
      *
      * @return
      */
     public abstract int getViewType();
+
+    /**
+     * Set variable data
+     *
+     * example：
+     * binding.setVariable(BR.model, mAdvertise);
+     *
+     * @param binding
+     */
+    public abstract void setVariable(ViewDataBinding binding);
+
 }
