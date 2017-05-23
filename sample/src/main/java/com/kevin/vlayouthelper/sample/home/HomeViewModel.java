@@ -12,6 +12,8 @@ import com.alibaba.android.vlayout.DelegateAdapter;
 import com.google.gson.Gson;
 import com.kevin.vlayouthelper.AdapterBuild;
 import com.kevin.vlayouthelper.sample.home.adapter.BannerAdapter;
+import com.kevin.vlayouthelper.sample.home.adapter.BroadcastAdapter;
+import com.kevin.vlayouthelper.sample.home.adapter.DividerLineAdapter;
 import com.kevin.vlayouthelper.sample.home.adapter.HotPointAdapter;
 import com.kevin.vlayouthelper.sample.home.adapter.RecommendAdapter;
 import com.kevin.vlayouthelper.sample.home.adapter.RecommendTitleAdapter;
@@ -45,6 +47,8 @@ public class HomeViewModel extends BaseObservable {
 
         List<DelegateAdapter.Adapter> mAdapters = new AdapterBuild()
                 .addAdapter(new BannerAdapter(this, mHomeIndex.loopData))
+                .addAdapter(new BroadcastAdapter(this, mHomeIndex.broadcast))
+                .addAdapter(new DividerLineAdapter(mHomeIndex.dividerLine))
                 .addAdapter(new HotPointAdapter(this, mHomeIndex.hotPoint, 5))
                 .addAdapter(new RecommendTitleAdapter(mHomeIndex.recommendTitle))
                 .addAdapter(new RecommendAdapter(mHomeIndex.recommend, 2))

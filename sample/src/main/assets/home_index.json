@@ -1,92 +1,77 @@
 {
-  "loopData": {
+  "loop_data": {
     "items": [
       {
         "id": "0",
-        "descText": "The first picture",
-        "imgUrl": "http://img.alicdn.com/tps/i3/TB1urIUJXXXXXa8XpXXgoUDMFXX-1680-400.jpg",
-        "link": "https://github.com/xuehuayous/WrapRecyclerView"
+        "imgUrl": "http://i8.mifile.cn/b2c-mimall-media/03321be3287684fa142b9ba3e47a8042.jpg",
+        "link": "ShopPlugin://com.xiaomi.shop.plugin.productchannel.ui.RootFragment?pluginId=15101"
       },
       {
         "id": "1",
-        "descText": "The second picture",
-        "imgUrl": "http://i.mmcdn.cn/simba/img/TB1FyZYIVXXXXaRXVXXSutbFXXX.jpg",
-        "link": "https://github.com/xuehuayous/WrapRecyclerView"
+        "imgUrl": "http://i8.mifile.cn/b2c-mimall-media/66d17164a4e048afa5cb0b1482975025.jpg",
+        "link": "ShopPlugin://com.xiaomi.shop2.plugin.webview.RootFragment?pluginId=111"
       },
       {
         "id": "2",
-        "descText": "The third picture",
-        "imgUrl": "http://img.alicdn.com/tps/i1/TB1PRgKJXXXXXcSXFXXgoUDMFXX-1680-400.jpg",
-        "link": "https://github.com/xuehuayous/WrapRecyclerView"
+        "imgUrl": "http://i8.mifile.cn/b2c-mimall-media/b35794b657d327974ee44489431bf9f9.jpg",
+        "link": "ShopPlugin://com.xiaomi.shop2.plugin.goodsdetail.GoodsDetailFragment?pluginId=101"
       },
       {
         "id": "3",
-        "descText": "The fourth picture",
-        "imgUrl": "http://img.alicdn.com/tps/i2/TB1CeQRJXXXXXcbXpXXgoUDMFXX-1680-400.jpg",
-        "link": "https://github.com/xuehuayous/WrapRecyclerView"
-      },
-      {
-        "id": "4",
-        "descText": "The fourth picture",
-        "imgUrl": "http://img.alicdn.com/tps/i3/TB1ws32JXXXXXXgXXXXgoUDMFXX-1680-400.jpg",
-        "link": "https://github.com/xuehuayous/WrapRecyclerView"
-      },
-      {
-        "id": "5",
-        "descText": "The fourth picture",
-        "imgUrl": "http://img.alicdn.com/tps/i2/TB1SNQFJXXXXXbjXpXXl_Xx2XXX-1680-400.jpeg",
-        "link": "https://github.com/xuehuayous/WrapRecyclerView"
-      },
-      {
-        "id": "6",
-        "descText": "The fourth picture",
-        "imgUrl": "http://img.alicdn.com/tps/i3/TB1IAsHJXXXXXaqXVXXgoUDMFXX-1680-400.jpg",
-        "link": "https://github.com/xuehuayous/WrapRecyclerView"
+        "imgUrl": "http://i8.mifile.cn/b2c-mimall-media/1afba8663cd0642d43f3f2859d620dfc.jpg",
+        "link": "ShopPlugin://com.xiaomi.shop2.plugin.goodsdetail.GoodsDetailFragment?pluginId=101"
       }
     ]
   },
-  "hotPoint": [
+  "broadcast": {
+    "title_logo_url": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/846dbda81fbb2680034f44eacf665e15.jpg",
+    "items": [
+      {
+        "news_title": "1秒让空调变智能！米家空调伴侣169元首发",
+        "path": "ShopPlugin://com.xiaomi.shop.plugin.channel.ui.RootFragment?pluginId=150"
+      },
+      {
+        "news_title": "最高立减1000元福利！小米电视4A剁手评测",
+        "path": "ShopPlugin://com.xiaomi.shop.plugin.channel.ui.RootFragment?pluginId=150"
+      },
+      {
+        "news_title": "小米6的完美搭档，小米降噪耳机Type-C版来了！",
+        "path": "ShopPlugin://com.xiaomi.shop.plugin.channel.ui.RootFragment?pluginId=150"
+      }
+    ]
+  },
+  "hot_point": [
     {
-      "imgUrl": "https://img.alicdn.com/tps/i3/TB1DGkJJFXXXXaZXFXX07tlTXXX-200-200.png_88x88xz.jpg",
-      "name": "天猫"
+      "img_url": "http://i8.mifile.cn/b2c-mimall-media/58a9a0dd0bb8452d17fe00b4497b0f13.jpg",
+      "name": "真心想要",
+      "path": "ShopPlugin://com.xiaomi.shop.plugin.registenew.RegisteListFragment?pluginId=142"
     },
     {
-      "imgUrl": "https://img.alicdn.com/tps/i4/TB1CKSgIpXXXXccXXXX07tlTXXX-200-200.png_88x88xz.jpg",
-      "name": "聚划算"
+      "img_url": "http://i8.mifile.cn/b2c-mimall-media/8439129ed8b76695e979b64ce2271524.jpg",
+      "name": "聚划算",
+      "path": "ShopPlugin://com.xiaomi.shop.plugin.telCharge.ChargeFrgement?pluginId=122"
     },
     {
-      "imgUrl": "https://img.alicdn.com/tps/TB17c96OXXXXXaUXFXXXXXXXXXX-200-200.png_88x88xz.jpg",
-      "name": "淘票票"
+      "img_url": "http://i8.mifile.cn/b2c-mimall-media/3be1481216a3955059f26034ff6ba78f.jpg",
+      "name": "淘票票",
+      "path": "ShopPlugin://com.xiaomi.shop2.plugin.webview.RootFragment?pluginId=111"
     },
     {
-      "imgUrl": "https://img.alicdn.com/tps/i3/TB15GYBKXXXXXXcXpXX07tlTXXX-200-200.png_88x88xz.jpg",
-      "name": "爱逛街"
+      "img_url": "http://i8.mifile.cn/b2c-mimall-media/4f1cc3d1bb2c12a86d583d5d96bcd2b9.jpg",
+      "name": "爱逛街",
+      "path": "ShopPlugin://com.xiaomi.shop.plugin.phonestyle.PhoneStyleFragment?pluginId=132"
     },
     {
-      "imgUrl": "https://img.alicdn.com/tps/TB1gwh3KFXXXXXkaXXXXXXXXXXX-200-200.png_88x88xz.jpg",
-      "name": "蚂蚁聚宝"
-    },
-    {
-      "imgUrl": "https://img.alicdn.com/tps/TB1zEtNPVXXXXbAXFXXXXXXXXXX-200-200.png_88x88xz.jpg",
-      "name": "飞猪"
-    },
-    {
-      "imgUrl": "https://img.alicdn.com/tps/i2/TB1p6kgIXXXXXXTXXXXezUPJpXX-87-87.jpg_88x88xz.jpg",
-      "name": "闲鱼"
-    },
-    {
-      "imgUrl": "https://img.alicdn.com/tfs/TB1lXzzKpXXXXXnXVXXXXXXXXXX-200-200.png_88x88xz.jpg",
-      "name": "淘宝全球"
-    },
-    {
-      "imgUrl": "https://img.alicdn.com/tps/TB1efJ4LXXXXXXmXVXXXXXXXXXX-200-200.png_88x88xz.jpg",
-      "name": "淘宝头条"
-    },
-    {
-      "imgUrl": "https://img.alicdn.com/tps/TB10X1LKVXXXXbSXFXXXXXXXXXX-200-200.png_88x88xz.jpg",
-      "name": "一淘"
+      "img_url": "http://i8.mifile.cn/b2c-mimall-media/c437980824461bcc69a5bcbbb9bad0d2.jpg",
+      "name": "蚂蚁聚宝",
+      "path": "ShopPlugin://com.xiaomi.shop.plugin.productchannel.ui.RootFragment?pluginId=15101"
     }
   ],
+  "divider_line": {
+    "line_color": "#cecece",
+    "line_height": 1
+  },
+
   "recommendTitle": {
     "imgUrl": "https://img.alicdn.com/imgextra/i3/2203256980/TB2.DE1eFXXXXbFXpXXXXXXXXXX_!!2203256980.jpg",
     "pageParam": "scm=1003.2.201505051714.OTHER_1440097944957_394443",

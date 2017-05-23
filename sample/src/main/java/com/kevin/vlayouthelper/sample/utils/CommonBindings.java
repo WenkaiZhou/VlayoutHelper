@@ -1,6 +1,8 @@
 package com.kevin.vlayouthelper.sample.utils;
 
+import android.content.Intent;
 import android.databinding.BindingAdapter;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +40,11 @@ public class CommonBindings {
             lp.height = DisplayUtils.dip2px(view.getContext(), dipValue);
             view.setLayoutParams(lp);
         }
+    }
+
+    @BindingAdapter("android:background")
+    public static void setLayoutHeight(View view, String color) {
+        view.setBackgroundColor(Color.parseColor(color));
     }
 
 }

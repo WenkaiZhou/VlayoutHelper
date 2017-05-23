@@ -50,5 +50,6 @@ public class HotPointAdapter extends GridAdapter<HomeIndex.HotPoint> {
     @Override
     public void configLayoutHelper(GridLayoutHelper layoutHelper) {
         layoutHelper.setBgColor(Color.WHITE);
+        layoutHelper.setAspectRatio(1 / mSpanCount);
     }
 }

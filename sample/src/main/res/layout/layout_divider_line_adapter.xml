@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.kevin.vlayouthelper.sample.home.HomeIndex.DividerLine" />
+    </data>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@{model.lineHeight, default=wrap_content}"
+        android:background="@{model.lineColor}" />
+
+</layout>
