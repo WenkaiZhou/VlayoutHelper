@@ -81,16 +81,12 @@ public abstract class OnePlusAdapterEx<T> extends ClickableAdapter<OnePlusNLayou
     }
 
     public OnePlusAdapterEx(int itemCount) {
-        this(null, itemCount);
+        this.mItemCount = itemCount;
     }
 
     public OnePlusAdapterEx(List<T> items) {
-        this(items, 0);
-    }
-
-    public OnePlusAdapterEx(List<T> items, int itemCount) {
         this.mItems = items;
-        this.mItemCount = itemCount;
+        this.mItemCount = items.size();
     }
 
     @Override
