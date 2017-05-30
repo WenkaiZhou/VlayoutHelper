@@ -17,7 +17,7 @@
         android:id="@+id/loop_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:onClickListener="@{viewmodel.onBannerItemClick}"
+        app:onClickListener="@{viewmodel::onBannerItemClick}"
         app:loopViewPager="@{model}"
         app:loop_autoLoop="true"
         app:loop_dotSelector="@drawable/banner_dots_selector"

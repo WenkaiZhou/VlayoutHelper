@@ -33,14 +33,14 @@ public class BannerAdapter extends SingleAdapter<LoopData> {
     }
 
     @Override
-    public void setVariable(ViewDataBinding binding) {
-        binding.setVariable(BR.viewmodel, mViewModel);
-        binding.setVariable(BR.model, mData);
+    public void configLayoutHelper(SingleLayoutHelper layoutHelper) {
+        layoutHelper.setAspectRatio(1.40625F); // 1080÷768
     }
 
     @Override
-    public void configLayoutHelper(SingleLayoutHelper layoutHelper) {
-        layoutHelper.setAspectRatio(1.40625F); // 1080÷768
+    public void setVariable(ViewDataBinding binding) {
+        binding.setVariable(BR.viewmodel, mViewModel);
+        binding.setVariable(BR.model, mData);
     }
 
 }

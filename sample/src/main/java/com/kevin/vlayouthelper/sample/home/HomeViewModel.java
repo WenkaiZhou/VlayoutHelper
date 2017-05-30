@@ -17,6 +17,7 @@ import com.kevin.vlayouthelper.sample.home.adapter.DividerLineAdapter;
 import com.kevin.vlayouthelper.sample.home.adapter.HotPointAdapter;
 import com.kevin.vlayouthelper.sample.home.adapter.RecommendAdapter;
 import com.kevin.vlayouthelper.sample.home.adapter.RecommendTitleAdapter;
+import com.kevin.vlayouthelper.sample.home.adapter.SpecialAdapter;
 import com.kevin.vlayouthelper.sample.utils.LocalFileUtils;
 
 import java.util.List;
@@ -50,6 +51,7 @@ public class HomeViewModel extends BaseObservable {
                 .addAdapter(new BroadcastAdapter(this, mHomeIndex.broadcast))
                 .addAdapter(new DividerLineAdapter(mHomeIndex.dividerLine))
                 .addAdapter(new HotPointAdapter(this, mHomeIndex.hotPoint, 5))
+                .addAdapter(new SpecialAdapter(this, mHomeIndex.special))
                 .addAdapter(new RecommendTitleAdapter(mHomeIndex.recommendTitle))
                 .addAdapter(new RecommendAdapter(mHomeIndex.recommend, 2))
                 .build();
@@ -73,10 +75,14 @@ public class HomeViewModel extends BaseObservable {
      * HotPoint点击监听的方法
      *
      * @param view
-     * @param position
+     * @param hotPoint
      */
-    public void onHotPointItemClick(View view, int position) {
-        Toast.makeText(view.getContext(), "go to " + mHomeIndex.hotPoint.get(position).name , Toast.LENGTH_SHORT).show();
+    public void onHotPointItemClick(View view, HomeIndex.HotPoint hotPoint) {
+        Toast.makeText(view.getContext(), "go to " + hotPoint.name , Toast.LENGTH_SHORT).show();
+    }
+
+    public void onSpecialItemClick(View view, HomeIndex.Special special) {
+        Toast.makeText(view.getContext(), "go to " + special.path , Toast.LENGTH_SHORT).show();
     }
 
     public void onActivityDestroyed() {

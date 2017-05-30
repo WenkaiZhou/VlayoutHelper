@@ -29,7 +29,7 @@ public class HotPointAdapter extends GridAdapter<HomeIndex.HotPoint> {
 
     @Override
     public void onChildClick(View view, int position) {
-        mViewModel.onHotPointItemClick(view, position);
+        mViewModel.onHotPointItemClick(view, mItems.get(position));
     }
 
     @Override

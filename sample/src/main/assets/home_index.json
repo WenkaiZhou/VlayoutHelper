@@ -48,22 +48,22 @@
     },
     {
       "img_url": "http://i8.mifile.cn/b2c-mimall-media/8439129ed8b76695e979b64ce2271524.jpg",
-      "name": "聚划算",
+      "name": "手机充值",
       "path": "ShopPlugin://com.xiaomi.shop.plugin.telCharge.ChargeFrgement?pluginId=122"
     },
     {
       "img_url": "http://i8.mifile.cn/b2c-mimall-media/3be1481216a3955059f26034ff6ba78f.jpg",
-      "name": "淘票票",
+      "name": "电话卡",
       "path": "ShopPlugin://com.xiaomi.shop2.plugin.webview.RootFragment?pluginId=111"
     },
     {
       "img_url": "http://i8.mifile.cn/b2c-mimall-media/4f1cc3d1bb2c12a86d583d5d96bcd2b9.jpg",
-      "name": "爱逛街",
+      "name": "挑选手机",
       "path": "ShopPlugin://com.xiaomi.shop.plugin.phonestyle.PhoneStyleFragment?pluginId=132"
     },
     {
       "img_url": "http://i8.mifile.cn/b2c-mimall-media/c437980824461bcc69a5bcbbb9bad0d2.jpg",
-      "name": "蚂蚁聚宝",
+      "name": "新品发布",
       "path": "ShopPlugin://com.xiaomi.shop.plugin.productchannel.ui.RootFragment?pluginId=15101"
     }
   ],
@@ -71,7 +71,23 @@
     "line_color": "#cecece",
     "line_height": 1
   },
-
+  "special": [
+    {
+      "img_url": "http://i8.mifile.cn/v1/a1/eb11ec2b-f90b-b3a2-78d2-8cd7ea839bd4.webp?bg=A5B0B3",
+      "type": "plugin",
+      "path": "ShopPlugin://com.xiaomi.shop.plugin.productchannel.ui.RootFragment?pluginId=15101"
+    },
+    {
+      "img_url": "http://i8.mifile.cn/b2c-mimall-media/cd654b985757a95e0adaac8f0c72668b.jpg",
+      "type": "plugin",
+      "path": "ShopPlugin://com.xiaomi.shop.plugin.productchannel.ui.RootFragment?pluginId=15101"
+    },
+    {
+      "img_url": "http://i8.mifile.cn/v1/a1/4d4d4abc-2bca-9bf8-82c7-67847ac4c038.webp?bg=CBD7B8",
+      "type": "plugin",
+      "path": "ShopPlugin://com.xiaomi.shop.plugin.productchannel.ui.RootFragment?pluginId=15101"
+    }
+  ],
   "recommendTitle": {
     "imgUrl": "https://img.alicdn.com/imgextra/i3/2203256980/TB2.DE1eFXXXXbFXpXXXXXXXXXX_!!2203256980.jpg",
     "pageParam": "scm=1003.2.201505051714.OTHER_1440097944957_394443",

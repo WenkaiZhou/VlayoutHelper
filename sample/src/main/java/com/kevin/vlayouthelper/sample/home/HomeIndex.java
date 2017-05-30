@@ -22,7 +22,7 @@ public class HomeIndex {
     @SerializedName("divider_line")
     public DividerLine dividerLine;
 
-
+    public List<Special> special;
 
     public RecommendTitle recommendTitle;
 
@@ -55,6 +55,13 @@ public class HomeIndex {
         public String lineColor;
         @SerializedName("line_height")
         public int lineHeight;
+    }
+
+    public class Special {
+        @SerializedName("img_url")
+        public String imgUrl;
+        public String type;
+        public String path;
     }
 
     public class RecommendTitle {

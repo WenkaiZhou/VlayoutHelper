@@ -6,12 +6,17 @@
 
         <variable
             name="model"
-            type="com.kevin.vlayouthelper.sample.home.HomeIndex.HotPoint" />
+            type="com.kevin.vlayouthelper.sample.home.HomeIndex.Special" />
+
+        <variable
+            name="viewmodel"
+            type="com.kevin.vlayouthelper.sample.home.HomeViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="1dp">
 
         <ImageView
             android:id="@+id/iv_img"
@@ -24,4 +29,5 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </android.support.constraint.ConstraintLayout>
+
 </layout>
