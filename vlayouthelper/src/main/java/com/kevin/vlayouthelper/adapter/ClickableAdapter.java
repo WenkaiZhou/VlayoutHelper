@@ -40,23 +40,24 @@ public abstract class ClickableAdapter<LH extends LayoutHelper> extends BaseAdap
 
     @Override
     public void onBindViewHolder(BindingHolder holder, final int position) {
+        final int temPosition = position;
 
         // If the item can click
-        if (clickable(position)) {
+        if (clickable(temPosition)) {
             holder.getBinding().getRoot().setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    onChildClick(v, position);
+                    onChildClick(v, temPosition);
                 }
             });
         }
 
         // If the item can long click
-        if (longClickable(position)) {
+        if (longClickable(temPosition)) {
             holder.getBinding().getRoot().setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View v) {
-                    return onChildLongClick(v, position);
+                    return onChildLongClick(v, temPosition);
                 }
             });
         }
