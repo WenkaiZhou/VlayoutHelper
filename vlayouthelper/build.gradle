@@ -7,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion Integer.parseInt(System.properties['targetSdkVersion'] ?: '14')
-        versionCode 3
-        versionName "1.0.2"
+        versionCode 4
+        versionName "1.0.3"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -31,7 +31,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testCompile 'junit:junit:4.12'
-    provided('com.alibaba.android:vlayout:1.0.6') {
+    provided('com.alibaba.android:vlayout:1.1.0') {
         exclude group: 'com.android.support'
     }
     provided 'com.android.support:recyclerview-v7:25.3.1'
