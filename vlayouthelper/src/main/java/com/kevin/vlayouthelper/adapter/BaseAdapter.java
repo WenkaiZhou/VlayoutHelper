@@ -107,7 +107,7 @@ public abstract class BaseAdapter<LH extends LayoutHelper> extends DelegateAdapt
     /**
      * BindingHolder
      */
-    static class BindingHolder extends RecyclerView.ViewHolder {
+    public static class BindingHolder extends RecyclerView.ViewHolder {
 
         private ViewDataBinding binding;
 
