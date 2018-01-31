@@ -39,7 +39,8 @@ public class SlideInRightAnimation extends BaseAnimation {
 
     @Override
     protected void start(RecyclerView.ViewHolder holder) {
-        ObjectAnimator translationX = ObjectAnimator.ofFloat(holder.itemView, "translationX", holder.itemView.getRootView().getWidth(), 0);
+        ObjectAnimator translationX = ObjectAnimator
+                .ofFloat(holder.itemView, "translationX", holder.itemView.getRootView().getWidth(), 0);
         translationX
                 .setDuration(250)
                 .setInterpolator(new DecelerateInterpolator());

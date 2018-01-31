@@ -60,14 +60,14 @@ public class AnimationLoader {
      * @param holder BaseViewHolder
      */
     public void startAnimation(@NonNull BaseAdapter.BindingHolder holder) {
-        //如果动画开关关闭则返回
+        // 如果动画开关关闭则返回
         if (!isAnimEnable) {
             return;
         }
 
         int adapterPosition = holder.getAdapterPosition();
 
-        //判断是否初次展示的时候展示动画
+        // 判断是否初次展示的时候展示动画
         if (!isShowAnimWhenFirst || adapterPosition > lastAnimIndex) {
 
             if (null != animation) {
