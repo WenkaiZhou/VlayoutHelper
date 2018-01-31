@@ -36,7 +36,7 @@ import com.alibaba.android.vlayout.LayoutHelper;
  * @since 1.0.0
  */
 
-public abstract class ClickableAdapter<LH extends LayoutHelper> extends BaseAdapter<LH> {
+public abstract class ClickableAdapter<LH extends LayoutHelper> extends AnimationAdapter<LH> {
 
     @Override
     public void onBindViewHolder(BindingHolder holder, final int position) {

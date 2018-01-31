@@ -4,6 +4,7 @@ import android.databinding.ViewDataBinding;
 import android.view.View;
 
 import com.kevin.vlayouthelper.adapter.StaggeredGridAdapter;
+import com.kevin.vlayouthelper.animation.SlideInBottomAnimation;
 import com.kevin.vlayouthelper.sample.BR;
 import com.kevin.vlayouthelper.sample.R;
 import com.kevin.vlayouthelper.sample.home.HomeIndex;
@@ -19,6 +20,8 @@ public class RecommendAdapter extends StaggeredGridAdapter<HomeIndex.Recommend> 
     public RecommendAdapter(List<HomeIndex.Recommend> items, int lanes) {
         super(items, lanes);
         this.mItems = items;
+        //开启动画，并取消动画只在第一次加载时展示
+        enableAnimation(new SlideInBottomAnimation());
     }
 
     @Override

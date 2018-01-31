@@ -3,6 +3,7 @@ package com.kevin.vlayouthelper.sample.home.adapter;
 import android.databinding.ViewDataBinding;
 
 import com.kevin.vlayouthelper.adapter.StickyAdapter;
+import com.kevin.vlayouthelper.animation.AlphaInAnimation;
 import com.kevin.vlayouthelper.sample.BR;
 import com.kevin.vlayouthelper.sample.R;
 import com.kevin.vlayouthelper.sample.home.HomeIndex;
@@ -15,6 +16,7 @@ public class RecommendTitleAdapter extends StickyAdapter<HomeIndex.RecommendTitl
 
     public RecommendTitleAdapter(HomeIndex.RecommendTitle data) {
         super(data);
+        enableAnimation(new AlphaInAnimation());
     }
 
     @Override

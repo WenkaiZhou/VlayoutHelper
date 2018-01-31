@@ -4,6 +4,7 @@ import android.databinding.ViewDataBinding;
 import android.view.View;
 
 import com.kevin.vlayouthelper.adapter.OnePlusAdapter;
+import com.kevin.vlayouthelper.animation.SlideInRightAnimation;
 import com.kevin.vlayouthelper.sample.BR;
 import com.kevin.vlayouthelper.sample.R;
 import com.kevin.vlayouthelper.sample.home.HomeIndex;
@@ -22,6 +23,7 @@ public class SpecialAdapter extends OnePlusAdapter<HomeIndex.Special> {
     public SpecialAdapter(HomeViewModel viewModel, List<HomeIndex.Special> items) {
         super(items);
         this.mViewModel = viewModel;
+        enableAnimation(new SlideInRightAnimation());
     }
 
     @Override

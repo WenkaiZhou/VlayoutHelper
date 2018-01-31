@@ -3,6 +3,7 @@ package com.kevin.vlayouthelper.sample.home.adapter;
 import android.databinding.ViewDataBinding;
 
 import com.kevin.vlayouthelper.adapter.SingleAdapter;
+import com.kevin.vlayouthelper.animation.ScaleInAnimation;
 import com.kevin.vlayouthelper.sample.BR;
 import com.kevin.vlayouthelper.sample.R;
 import com.kevin.vlayouthelper.sample.home.HomeIndex;
@@ -16,6 +17,7 @@ public class BroadcastAdapter extends SingleAdapter<HomeIndex.Broadcast> {
 
     public BroadcastAdapter(HomeViewModel viewModel, HomeIndex.Broadcast broadcast) {
         super(broadcast);
+        enableAnimation(new ScaleInAnimation());
     }
 
     @Override

@@ -3,10 +3,10 @@ package com.kevin.vlayouthelper.sample.home.adapter;
 import android.databinding.ViewDataBinding;
 import android.graphics.Color;
 import android.view.View;
-import android.widget.Toast;
 
 import com.alibaba.android.vlayout.layout.GridLayoutHelper;
 import com.kevin.vlayouthelper.adapter.GridAdapter;
+import com.kevin.vlayouthelper.animation.SlideInLeftAnimation;
 import com.kevin.vlayouthelper.sample.BR;
 import com.kevin.vlayouthelper.sample.R;
 import com.kevin.vlayouthelper.sample.home.HomeIndex;
@@ -25,6 +25,7 @@ public class HotPointAdapter extends GridAdapter<HomeIndex.HotPoint> {
     public HotPointAdapter(HomeViewModel viewModel, List<HomeIndex.HotPoint> items, int spanCount) {
         super(items, spanCount);
         this.mViewModel = viewModel;
+        enableAnimation(new SlideInLeftAnimation());
     }
 
     @Override
